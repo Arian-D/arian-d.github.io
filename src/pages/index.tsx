@@ -6,8 +6,8 @@ function Profiles() {
   ]
 
   const listItems = profiles
-    .map((account) => <a href={account[1]}>{account[0]}</a>)
-    .map((atag) => <li>{atag}</li>)
+    .map((account) => <a href={account[1]} key={account[1]}>{account[0]}</a>)
+    .map((atag) => <li key={atag.key}>{atag}</li>)
 
   return <ul>{listItems}</ul>
 }
