@@ -11,9 +11,9 @@ jobs:
           bun-version: "0.5.9"
       - run: bun install
       - run: bun run build
-      - name: Deploy
+      - name: Deploy to the gh-pages branch
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build/server/pages
+          publish_dir: ./build

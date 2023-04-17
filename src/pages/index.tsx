@@ -1,13 +1,15 @@
+import Link from 'next/link'
+
 function Profiles() {
   const profiles = [
     ["LinkedIn", "https://www.linkedin.com/in/arian-dehghani"],
     ["Email", "mailto:arianxdehghani@gmail.com"],
     ["GitHub", "https://github.com/arian-d"],
-    ["Blog", "http://arian-d.github.io/blog"],
+    ["Blog", "https://arian-d.github.io/blog"],
   ]
 
   const listItems = profiles
-    .map((account) => <a href={account[1]} key={account[1]}>{account[0]}</a>)
+    .map((account) => <Link href={account[1]} key={account[1]}>{account[0]}</Link>)
     .map((atag) => <li key={atag.key}>{atag}</li>)
 
   return <ul>{listItems}</ul>
