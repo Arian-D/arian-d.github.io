@@ -3,6 +3,7 @@ function Profiles() {
     ["LinkedIn", "https://www.linkedin.com/in/arian-dehghani"],
     ["Email", "mailto:arianxdehghani@gmail.com"],
     ["GitHub", "https://github.com/arian-d"],
+    ["Blog", "http://arian-d.github.io/blog"],
   ]
 
   const listItems = profiles
